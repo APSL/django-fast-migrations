@@ -15,7 +15,7 @@ pip install django-fast-migrations
 
 Then add ``'django_fast_migrations'`` to your ``INSTALLED_APPS``.
 
-```
+```python
 INSTALLED_APPS = [
     ...
     'django_fast_migrations',
