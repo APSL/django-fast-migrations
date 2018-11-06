@@ -1,0 +1,21 @@
+language: python
+matrix:
+  include:
+   - env: TOXENV=pypy3-dj20
+     python: pypy3
+   - env: TOXENV=pypy3-dj21
+     python: pypy3
+   - env: TOXENV=py35-dj20
+     python: 3.5
+   - env: TOXENV=py35-dj21
+     python: 3.5
+   - env: TOXENV=py36-dj20
+     python: 3.6
+   - env: TOXENV=py36-dj21
+     python: 3.6
+   - env: TOXENV=flake8
+     python: 3.6
+install:
+  - pip install tox
+script:
+  - tox
